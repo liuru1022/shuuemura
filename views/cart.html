@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/publicstyle.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="cartheader">
+    <div class="cartheader_content">
+      <img src="../img/logo/logo.03fce175.jpg" alt="">
+    </div>
+  </div>
+  <div class="cart_default">
+    <div class="cart_step">
+      <div class="step_item active">
+        <p>1 我的购物袋</p>
+        <div class="content_line"></div>
+      </div>
+      <div class="step_item">
+        <p>2 支付及物流</p>
+        <div class="content_line"></div>
+      </div>
+      <div class="step_item">
+        <p>3 成功提交订单</p>
+        <div class="content_line"></div>
+      </div>
+    </div>
+    <div class="mycart" style="display:none">
+      <a href="http://127.0.0.1:3000/">继续购物</a>
+      <div>
+        您的购物车
+        <span>( 1个 )</span>
+        <button class="btn-red">立即结算</button>
+      </div>
+      <div class="mycart_left">
+        <div class="mycart_title">
+          <div>
+            <input type="checkbox">
+          </div>
+          <div>全选</div>
+          <div>产品</div>
+          <div>数量</div>
+          <div>价格</div>
+        </div>
+        <div class="item_box">
+        </div>
+        <div class="newactive">
+          <img src="../img/other/0803-PC.jpg" alt="">
+        </div>
+        <div class="sometips">
+          <p>
+            <b>以绢结缘 七夕示爱</b>
+          </p>
+          <p>「绢感小黑方」七夕限定礼盒 至高享六重蜜礼</p>
+          <p>#RD 188夜山茶 亚洲专属永恒红调</p>
+          <p>#BG 964雨后樱 百搭不挑皮</p>
+          <p>#BR 784野红栗 飒爽沉稳控场密器</p>
+          <p><br></p>
+          <p><b>日本匠心美学系列限量发售</b></p>
+          <p>☆【镇店砍刀眉笔】硬质砍刀 三刀仿真眉</p>
+          <p>☆【王牌琥珀油】一步卸净 细腻透亮肌</p>
+          <p>☆【当家星品55刷】搭配小方瓶 不留刷痕持色到底</p>
+          <p><br></p>
+          <p><b>会员权益宠粉专享</b></p>
+          <p>☆【四件礼】任购正装随单赠</p>
+          <p>☆【顺丰包邮】正装订单全年享</p>
+          <p><br></p>
+          <p><b>【物流公告】</b></p>
+          <p>★江苏省扬州市因受疫情影响即日起无法收派和发运快件，感谢您的理解。</p>
+          <p>★如有任何疑问，请详询在线客服~</p>
+          <p>★植村秀官方商城「现货订单」订单完成付款后，将于48小时内发货</p>
+          <p>★正装产品订单默认发顺丰物流，顺丰停运地区、付邮试用、蜜享盒或其他特殊订单发申通快递或其他物流，具体以实际物流信息为准</p>
+          <p><br></p>
+        </div>
+        <div class="coupon_code">
+          <p>促销代码<i></i></p>
+          <input type="text" placeholder="请输入促销代码">
+          <button class="btn-black">提交</button>
+        </div>
+        <div class="detail_price">
+          <h2>订单总结</h2>
+          <div>
+            <p>
+              <span>商品价格</span>
+              <span>￥0</span>
+            </p>
+            <p>
+              <span>运费</span>
+              <span>￥0</span>
+            </p>
+          </div>
+        </div>
+        <div class="total_line">
+          <span>总价</span>
+          <span>￥0</span>
+        </div>
+        <div class="checkout_cart">
+          <a href="http://127.0.0.1:3000/">继续购物</a>
+          <button class="btn-red">立即结算</button>
+        </div>
+      </div>
+      <div class="mycart_right">
+        <div class="hotsale">
+          <p>热卖产品推荐</p>
+          <div>
+            <img src="../img/product/584.jpg" alt="" onclick="window.location.href='details.html?id=5'">
+            <b>羽纱持妆粉底液</b>
+            <p>584 35ml 中一白</p>
+            <div>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star1.png" alt="">
+            </div>
+            <p class="hotsale_price" id="5">￥430</p>
+            <button class="btn-black" color="#ffead6" buy="584 35ml 中一白" id="insertcart">立即购买</button>
+          </div>
+        </div>
+        <div class="customer">
+          <h2>客服中心</h2>
+          <p>如有任何问题，请联系我们</p>
+          <p><img src="../img/icon/dianhua.png" alt=""> 400-820-6499</p>
+          <button class="btn-black">在线咨询</button>
+        </div>
+      </div>
+    </div>
+    <div class="noproduct_mycart">
+      <div class="noproduct_tips">
+        <h1>我的购物袋</h1>
+        <p>您的购物袋是空的，立即购买您喜爱的产品。</p>
+        <a href="http://127.0.0.1:3000/">继续购物</a>
+      </div>
+      <div class="noproduct_customer">
+        <h2>客服中心</h2>
+        <p>如有任何问题，请联系我们</p>
+        <p><img src="../img/icon/dianhua.png" alt=""> 400-820-6499</p>
+        <button class="btn-black">在线咨询</button>
+      </div>
+      <div class="possiblelike">
+        <h3>您可能会喜欢</h3>
+        <ul>
+          <li class="possiblelike_item">
+            <img src="../img/product/U8-白底.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=10'">快速浏览</button>
+            <div>
+              <b>琥珀养肤洁颜油</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="10">￥390</span>
+              <button class="btn-black" color="#fff" buy="450ml 匠心限定版" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/F6879000U_0_01.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=7'">快速浏览</button>
+            <div>
+              <b>自动砍刀眉笔</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="7">￥140-260</span>
+              <button class="btn-black" color="#453633" buy="灰棕02 0.3g" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/F5635500U_01.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=8'">快速浏览</button>
+            <div>
+              <b>控油泡沫隔离</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="8">￥390</span>
+              <button class="btn-black" color="#f6e5d1" buy="米色 SPF35 PA+++ 50g" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/新 大净透油.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=12'">快速浏览</button>
+            <div>
+              <b>樱花净肤洁颜油</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="12">￥700</span>
+              <button class="btn-black" color="#fff" buy="450ml" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/1rjsqsz.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=9'">快速浏览</button>
+            <div>
+              <b>如胶似漆眼线笔</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="9">￥245</span>
+              <button class="btn-black" color="#714842" buy="深棕 升级防晕 0.08g" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/白底图.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=11'">快速浏览</button>
+            <div>
+              <b>绿茶新肌洁颜油</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="11">￥750</span>
+              <button class="btn-black" color="#fff" buy="450ml" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/U8-白底.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=10'">快速浏览</button>
+            <div>
+              <b>琥珀养肤洁颜油</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="10">￥390</span>
+              <button class="btn-black" color="#fff" buy="450ml" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/F6879000U_0_01.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=7'">快速浏览</button>
+            <div>
+              <b>自动砍刀眉笔</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="7">￥260</span>
+              <button class="btn-black" color="#453633" buy="灰棕02 0.3g" id="insertcart">立即购买</button>
+            </div>
+          </li>
+          <li class="possiblelike_item">
+            <img src="../img/product/F5635500U_01.jpg" alt="">
+            <button class="btn-black" onclick="window.location.href='details.html?id=8'">快速浏览</button>
+            <div>
+              <b>控油泡沫隔离</b>
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <img src="../img/icon/Star.png" alt="">
+              <span>|</span>
+              <span id="8">￥390</span>
+              <button class="btn-black" color="#f6e5d1" buy="米色 SPF35 PA+++ 50g" id="insertcart">立即购买</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="warranty">
+    <div class="warranty_content">
+      <div>
+        <img src="../img/icon/授权正品.png" alt="">
+        <p>100%官方正品保证</p>
+      </div>
+      <div>
+        <img src="../img/icon/充值.png" alt="">
+        <p>支持多种支付方式</p>
+      </div>
+      <div>
+        <img src="../img/icon/我的抢单.png" alt="">
+        <p>专享官网特惠礼遇</p>
+      </div>
+      <div>
+        <img src="../img/icon/账号.png" alt="">
+        <p>联系我们</p>
+        <p>电话400-820-6499</p>
+      </div>
+    </div>
+  </div>
+  <div class="delivery_msg">
+    <div>
+      <b>顺丰配送（偏远地区及付邮试用除外）</b>
+      <img src="../img/footer/下载.png" alt="">
+      <img src="../img/footer/下载1.png" alt="">
+      <img src="../img/footer/下载2.png" alt="">
+      <span>安全支付保障</span>
+    </div>
+  </div>
+  <div class="cart_copyright">
+    <p>点击<a href="javascript:;">Cookies政策</a>了解详情 <img src="../img/footer/下载3.png" alt=""> <a
+        href="javascript;:">沪ICP备08100043-7号</a> <img src="../img/footer/下载4.png" alt=""> <a href="javascript:;">沪公网安备
+        31010602001532号</a></p>
+  </div>
+</body>
+<script src="../javascripts/ajax.js"></script>
+<script src="../javascripts/insertcart.js"></script>
+<script>
+  // 根据登录的数据显示用户的信息
+  var iteminfojson = window.localStorage.getItem('user');
+  var mycart = document.querySelector('.mycart');
+  var noproduct_mycart = document.querySelector('.noproduct_mycart');
+  var item_box = document.querySelector('.item_box');
+  if (iteminfojson) { //如果有值代表处于登陆状态，显示当前用户的购物车
+    mycart.style.display = 'block';
+    noproduct_mycart.style.display = 'none';
+    var iteminfo = JSON.parse(iteminfojson);
+    ajax({
+      type: 'post',
+      url: 'http://127.0.0.1:3000/users/showcart',
+      data: `useid=${iteminfo.u_id}`,
+      dataType: 'json'
+    }).then(res => {
+      var cartItem = res.result;
+      if (cartItem) {
+        for (let i = 0; i < cartItem.length; i++) {
+          item_box.innerHTML += `
+          <div class="mycart_item">
+                <div>
+                  <input type="checkbox">
+                </div>
+                <div>
+                  <img src="../img/product/${cartItem[i].img}" alt="">
+                </div>
+                <div>
+                  <p>${cartItem[i].product_name}</p>
+                  ${cartItem[i].feature}
+                  <p><span>修改</span> · <span>+心愿单</span> · <span id="removecart" style="cursor:pointer;" cartid="${cartItem[i].c_id}">删除</span></p>
+                </div>
+                <div>
+                  <select id="selectcount" name="${cartItem[i].c_id}" value="${cartItem[i].count}">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div singleprice="${cartItem[i].price}">￥${cartItem[i].totalprice}</div>
+              </div>
+          `;
+          var select = document.querySelectorAll('select');
+          select[i].children[cartItem[i].count - 1].setAttribute('selected', 'selected');
+        }
+      } else {
+        mycart.style.display = 'none';
+        noproduct_mycart.style.display = 'block';
+      }
+
+      //处理全选事件
+      var checkALL = document.querySelector('.mycart_title>div:first-child>input')
+      var checkPros = document.querySelectorAll('.mycart_item>div:first-child>input')
+      checkALL.onchange = function () {
+        for (const checkPro of checkPros) {
+          checkPro.checked = checkALL.checked;
+        }
+      }
+      for (const checkPro of checkPros) {
+        checkPro.onchange = function () {
+          var unchecked = document.querySelector('.mycart_item>div:first-child>input:not(:checked)')
+          if (unchecked != null) {
+            checkALL.checked = false;
+          } else {
+            checkALL.checked = true;
+          }
+        }
+      }
+      // 处理选择数量，总价改变
+      var seloptions = document.querySelectorAll('.mycart_item>div>select');
+      for (const seloption of seloptions) {
+        seloption.onclick = function () {
+          var pro_price = seloption.parentElement.nextElementSibling;
+          var pro_count = seloption.value;
+          var single_price = pro_price.getAttribute('singleprice')
+          pro_price.innerHTML = `￥${single_price*pro_count}`;
+          ajax({
+            type: 'post',
+            url: 'http://127.0.0.1:3000/users/updatecart',
+            data: `c_id=${seloption.name}&count=${pro_count}&totalprice=${single_price*pro_count}`,
+            dataType: 'json'
+          }).then(res=>{
+            console.log('购物车更新成功');
+          })
+        }
+      }
+      // 处理总价计算
+      var cart_price = document.querySelector('.total_line>span:last-child')
+      var total_prices = document.querySelectorAll('.mycart_item>div:last-child');
+      var detail_price = document.querySelector('.detail_price>div>p:first-child>span:last-child');
+      var price_result = 0;
+      for (const total_price of total_prices) {
+        price_result += parseFloat(total_price.innerHTML.slice(1));
+      }
+      cart_price.innerHTML = `￥${price_result}`;
+      detail_price.innerHTML = cart_price.innerHTML;
+
+      // 移除购物车
+      var removecarts = document.querySelectorAll('#removecart')
+      for (const removecart of removecarts) {
+        removecart.onclick = function () {
+          var cartid = removecart.getAttribute('cartid');
+          ajax({
+            type: 'post',
+            url: 'http://127.0.0.1:3000/users/removecart',
+            data: `c_id=${cartid}`,
+            dataType: 'json'
+          }).then(res => {
+            location.reload();
+          })
+        }
+      }
+    })
+  } else {
+    mycart.style.display = 'none';
+    noproduct_mycart.style.display = 'block';
+  }
+</script>
+<script>
+  insertcart(1);
+</script>
+
+</html>

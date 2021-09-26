@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACT,SAAS,EAAE,MAAM;EACjB,cAAI;IACF,KAAK,EAAE,IAAI;IACX,YAAY,EAAE,IAAI;IAClB,OAAO,EAAE,KAAK;IACd,MAAM,EAAE,MAAM",
+"sources": ["../scss/brandshow.scss"],
+"names": [],
+"file": "brandshow.css"
+}

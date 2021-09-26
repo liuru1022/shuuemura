@@ -1,0 +1,58 @@
+.help_content {
+  display: flex;
+  width: 1300px;
+  margin: auto;
+  font-size: 14px; }
+  .help_content a {
+    text-decoration: underline; }
+    .help_content a:hover {
+      color: #b90220; }
+  .help_content .help_left {
+    padding: 80px 50px 50px 120px;
+    width: 756px; }
+    .help_content .help_left .help_line > p {
+      margin-bottom: 16px; }
+    .help_content .help_left .help_line span {
+      color: #828282; }
+  .help_content .info_box {
+    margin-bottom: 40px; }
+    .help_content .info_box > p:last-child {
+      color: #666666; }
+    .help_content .info_box p {
+      margin-bottom: 20px; }
+  .help_content .info_box + ul {
+    list-style: none; }
+    .help_content .info_box + ul li {
+      margin-bottom: 25px; }
+      .help_content .info_box + ul li::after {
+        content: ">"; }
+  .help_content .help_right {
+    text-align: center; }
+    .help_content .help_right button {
+      margin-top: 10px;
+      width: 118px;
+      height: 30px;
+      border-radius: 15px; }
+    .help_content .help_right > div:first-child {
+      margin-top: 80px;
+      padding: 50px 0;
+      width: 280px;
+      border: 1px solid #dcdcdc; }
+      .help_content .help_right > div:first-child div {
+        margin-bottom: 20px; }
+      .help_content .help_right > div:first-child p {
+        margin-bottom: 16px; }
+        .help_content .help_right > div:first-child p img {
+          width: 18px;
+          vertical-align: text-bottom; }
+    .help_content .help_right > div:last-child {
+      padding: 50px 0;
+      border: 1px solid #dcdcdc;
+      margin-top: 20px; }
+      .help_content .help_right > div:last-child div {
+        margin-bottom: 20px; }
+      .help_content .help_right > div:last-child a {
+        display: block;
+        margin-bottom: 16px; }
+
+/*# sourceMappingURL=help.css.map */

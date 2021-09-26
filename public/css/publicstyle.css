@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@keyframes movelike {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-2100px); } }
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+button.btn-black {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer; }
+  button.btn-black:hover {
+    background-color: #fff;
+    color: #000; }
+
+button.btn-red {
+  background-color: #b90220;
+  border: 1px solid #b90220;
+  color: #fff;
+  cursor: pointer; }
+  button.btn-red:hover {
+    background-color: #fff;
+    color: #b90220; }
+
+.warranty {
+  height: 210px;
+  width: 100%;
+  background-color: #000;
+  min-width: 1300px;
+  text-align: center; }
+  .warranty .warranty_content {
+    margin: 0 auto;
+    width: 1300px;
+    height: 210px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .warranty .warranty_content div {
+      text-align: center; }
+      .warranty .warranty_content div img {
+        width: 60px;
+        height: 60px; }
+      .warranty .warranty_content div p {
+        margin-top: 10px; }
+
+.copyright {
+  width: 100%;
+  min-width: 1300px;
+  height: 98px;
+  padding-top: 1px;
+  background-color: #ccc; }
+  .copyright .copyright_content {
+    height: 98px;
+    background-color: #2d2d2d;
+    color: #ddd;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden; }
+    .copyright .copyright_content p {
+      margin: 6px 0;
+      height: 24px;
+      line-height: 24px; }
+      .copyright .copyright_content p img {
+        width: 21px;
+        height: 21px;
+        vertical-align: middle; }
+      .copyright .copyright_content p a {
+        text-decoration: none;
+        color: #ddd;
+        margin: 0 8px; }
+        .copyright .copyright_content p a:hover {
+          text-decoration: underline; }
+
+.footer_top {
+  display: none;
+  width: 56px;
+  height: 56px;
+  background-color: #b90220;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  color: #fff;
+  text-align: center;
+  background-image: url(../img/footer/jiantou-copy-copy-copy.png);
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
+  background-size: 24px auto; }
+  .footer_top span {
+    display: inline-block;
+    margin-top: 26px; }
+
+.navhelp {
+  width: 100%;
+  min-width: 1300px;
+  background-color: #f4f4f4; }
+  .navhelp > div {
+    width: 1300px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 70px;
+    box-sizing: border-box;
+    margin: auto; }
+    .navhelp > div span {
+      font-size: 13px; }
+    .navhelp > div .localhref {
+      position: relative;
+      padding-right: 25px;
+      cursor: pointer; }
+      .navhelp > div .localhref:hover {
+        color: #b90220;
+        text-decoration: underline; }
+    .navhelp > div .localhref::after {
+      content: "";
+      background-image: url(../img/icon/changjiantou.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      right: 2px; }
+
+.noproduct_mycart {
+  width: 1300px;
+  margin: 0 auto; }
+  .noproduct_mycart .possiblelike {
+    width: 1150px;
+    height: 250px;
+    margin: 50px auto;
+    overflow: hidden; }
+    .noproduct_mycart .possiblelike h3 {
+      font-size: 28px;
+      padding: 20px 0;
+      font-weight: 400; }
+    .noproduct_mycart .possiblelike ul {
+      list-style: none;
+      display: flex;
+      width: 3150px;
+      justify-content: center;
+      margin: 0 50px;
+      font-size: 14px;
+      flex-flow: row nowrap;
+      animation: movelike 36s linear infinite; }
+    .noproduct_mycart .possiblelike li {
+      width: 350px;
+      height: 140px;
+      position: relative; }
+      .noproduct_mycart .possiblelike li > img {
+        width: 140px; }
+      .noproduct_mycart .possiblelike li > img:hover + button, .noproduct_mycart .possiblelike li > button:hover {
+        display: block; }
+      .noproduct_mycart .possiblelike li > button {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        display: none; }
+      .noproduct_mycart .possiblelike li button {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px; }
+      .noproduct_mycart .possiblelike li > div {
+        width: 200px;
+        height: 140px;
+        float: right; }
+        .noproduct_mycart .possiblelike li > div b {
+          display: block;
+          height: 60px;
+          font-weight: 400; }
+        .noproduct_mycart .possiblelike li > div img {
+          width: 14px;
+          vertical-align: middle; }
+        .noproduct_mycart .possiblelike li > div button {
+          margin-top: 20px; }
+
+/*# sourceMappingURL=publicstyle.css.map */

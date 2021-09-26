@@ -1,0 +1,39 @@
+/* 把一些需要去掉默认样式的元素提前重置 */
+/* 去掉所有元素的内外边距 */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 去掉a标签的下划线 */
+a{
+  text-decoration: none;
+}
+/* 去掉列表的标识符 */
+ul,ol{
+  list-style: none;
+}
+/* 去掉input的默认样式,轮廓线和边框 */
+input{
+  outline: none;
+  border: 0;
+}
+/* 去掉按钮的边框 */
+button{
+  border: 0;
+}
+/* html默认字号 */
+html{
+  font-size: 16px;
+  font-family:Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self; 
+}
+/* 专门定义居中区域宽度1000px 左右居中 */
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 专门定义清除浮动的类名，供需要清除坍塌的父元素使用 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
